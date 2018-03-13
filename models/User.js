@@ -21,18 +21,18 @@ var UserSchema = new mongoose.Schema({
     match:[/\S+@\S+\.\S+/, 'is invalid'],
     index: true,
   },
-	bio: String,
-	image: String,
-	favorites: [{
-	  type: mongoose.Schema.Types.ObjectId,
-	  ref: 'Article',
-	}],
-	following: [{
-	  type: mongoose.Schema.Types.ObjectId,
-	  ref: 'User',
-	}],
-	hash: String,
-	salt: String,
+  bio: String,
+  image: String,
+  favorites: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Article',
+  }],
+  following: [{
+  type: mongoose.Schema.Types.ObjectId,
+  ref: 'User',
+  }],
+  hash: String,
+  salt: String,
 },
 {
   timestamps: true,
