@@ -1,6 +1,6 @@
 {
   "name": "node-express-realworld-example-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "the server api for medium clone",
   "main": "app.js",
   "dependencies": {
@@ -24,16 +24,23 @@
     "slug": "0.9.1",
     "underscore": "1.8.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "1.17.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./app.js",
     "start": "node ./app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anthonybrown/node-express-api-server.git"
   },
-  "keywords": ["node", "API", "Express"],
+  "keywords": [
+    "node",
+    "API",
+    "Express"
+  ],
   "author": "pixel67 <tony@tonybrown.me> (http://tonybrown.me/)",
   "license": "MIT",
   "bugs": {
